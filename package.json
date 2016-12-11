@@ -1,0 +1,39 @@
+{
+  "name": "uglify-dir",
+  "author": "Cory Simmons",
+  "description": "CLI for UglifyJS2'ing directories. Uglify then bundle for build/perf gains.",
+  "version": "0.0.1-beta",
+  "main": "index.js",
+  "bin": {
+    "uglify-dir": "index.js"
+  },
+  "js:next": "lib/index.js",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "scripts": {
+    "start": "babel -w lib/index.js -o index.js"
+  },
+  "dependencies": {
+    "meow": "^3.7.0",
+    "mkdirp": "^0.5.1",
+    "uglify-js": "^2.7.5"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.12.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "shelljs": "^0.7.5"
+  }
+}
